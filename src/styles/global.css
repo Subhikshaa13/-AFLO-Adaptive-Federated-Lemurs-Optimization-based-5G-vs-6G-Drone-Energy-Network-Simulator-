@@ -1,0 +1,185 @@
+/* ---- GLOBAL RESET ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle at top, #0f1e45, #02010f);
+}
+
+
+/* ---- APP GRID LAYOUT ---- */
+.app {
+  display: grid;
+  grid-template-columns: 320px 1fr 420px;
+  grid-template-rows: 90px 400px auto;
+  gap: 20px;
+  padding: 20px;
+
+  height: 100vh;
+}
+.control-card {
+  grid-row: 2 / span 2;
+}
+
+.map-card {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.telemetry-card {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.comparison-card {
+  grid-row: 3;
+  grid-column: 2 / 3;
+  min-height: 350px;
+}
+
+.threed-card {
+  grid-row: 3;
+  grid-column: 3;
+  min-height: 350px;
+}
+.comparison-wrapper {
+  padding: 20px;
+  color: #e2e8f0;
+}
+
+.title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #a3bffa;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.metric-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 18px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.metric-card h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #93c5fd;
+}
+
+.metric-card p {
+  font-size: 16px;
+}
+
+.highlight {
+  display: block;
+  margin-top: 6px;
+  color: #22d3ee;
+  font-size: 14px;
+}
+
+.summary-text {
+  margin-top: 20px;
+  font-size: 15px;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+
+
+/* ---- GLASSMORPHIC CARDS ---- */
+.card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  padding: 20px;
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* ---- TOPBAR ---- */
+.topbar {
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+/* ---- PANEL LABELS ---- */
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+
+/* ---- INPUTS ---- */
+input, select {
+  width: 90%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  color: white;
+}
+
+button {
+  width: 92%;
+  padding: 10px;
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #004cff, #8e2de2);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+
+/* ---- LEAFLET MAP (FIX CRASHES!) ---- */
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 12px;
+  outline: none;
+}
+
+
+/* Fix Leaflet tile loading text visibility */
+.leaflet-control-attribution {
+  font-size: 10px;
+  color: #ccc !important;
+}
