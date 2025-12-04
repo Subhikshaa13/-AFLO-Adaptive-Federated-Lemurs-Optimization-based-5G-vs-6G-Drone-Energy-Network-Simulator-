@@ -1,4 +1,6 @@
 {
+  "homepage": "https://Subhikshaa13.github.io/-AFLO-Adaptive-Federated-Lemurs-Optimization-based-5G-vs-6G-Drone-Energy-Network-Simulator-",
+
   "name": "aflo-sim",
   "version": "0.1.0",
   "private": true,
@@ -23,11 +25,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+},
+  
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -45,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
