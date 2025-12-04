@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/-AFLO-Adaptive-Federated-Lemurs-Optimization-based-5G-vs-6G-Drone-Energy-Network-Simulator-/static/css/main.7e2c1dba.css",
+    "main.js": "/-AFLO-Adaptive-Federated-Lemurs-Optimization-based-5G-vs-6G-Drone-Energy-Network-Simulator-/static/js/main.8bc8b9a4.js",
+    "index.html": "/-AFLO-Adaptive-Federated-Lemurs-Optimization-based-5G-vs-6G-Drone-Energy-Network-Simulator-/index.html",
+    "main.7e2c1dba.css.map": "/-AFLO-Adaptive-Federated-Lemurs-Optimization-based-5G-vs-6G-Drone-Energy-Network-Simulator-/static/css/main.7e2c1dba.css.map",
+    "main.8bc8b9a4.js.map": "/-AFLO-Adaptive-Federated-Lemurs-Optimization-based-5G-vs-6G-Drone-Energy-Network-Simulator-/static/js/main.8bc8b9a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e2c1dba.css",
+    "static/js/main.8bc8b9a4.js"
+  ]
+}
